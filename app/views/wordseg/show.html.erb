@@ -1,0 +1,11 @@
+<h1>Split Finnish compound word !</h1>
+<!-- p>Find me in app/views/wordseg/show.html.erb</p -->
+<%= form_tag('/') do %>
+	<%= text_field_tag 'searchstr', @searchstr, :size => 100 %>
+	<%= submit_tag "Analyze!" %>
+<% end %>
+
+Result: <h2><%= @analyze_result %></h2>
+
+<hr>
+Using <a href="http://ispell-fi.sourceforge.net/">ispell-fi: Finnish spell checking dictionary for ispell</a><br>

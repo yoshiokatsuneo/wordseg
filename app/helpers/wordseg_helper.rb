@@ -1,0 +1,2 @@
+module WordsegHelper
+end
