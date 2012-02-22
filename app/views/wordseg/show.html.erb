@@ -1,6 +1,6 @@
 <h1>Split Finnish compound word !</h1>
 <!-- p>Find me in app/views/wordseg/show.html.erb</p -->
-<%= form_tag('/') do %>
+<%= form_tag('/', :method => :get) do %>
 	<%= text_field_tag 'searchstr', @searchstr, :size => 100 %>
 	<%= submit_tag "Analyze!" %>
 <% end %>
